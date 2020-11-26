@@ -37,14 +37,14 @@
   "devDependencies": {
     "prettier": "2.2.0"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
   "husky": {
       "hooks": {
-        "pre-commit": "echo lior"
+        "pre-commit": "lint-staged"
       }
-    },
-    "lint-staged": {
-       "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-         "prettier --write"
-       ]
-     }
+    }
 }
