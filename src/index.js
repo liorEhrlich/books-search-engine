@@ -8,7 +8,9 @@ ReactDOM.render(
     test
 
     test2
-    
+
+    test3
+
           <App />
   </React.StrictMode>,
   document.getElementById("root")
